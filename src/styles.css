@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --orange: #FF9966;
+  --red: #CC6633;
+  --light-blue: #339999;
+  --very-light-blue: #CCFFFF;
+  --blue: #336699;
+  --gray: #E6E6E6;
+  --yellow: #EBC51B;
+  --dark-yellow: #E9A523;
+  --light-red: #FF6666;
+  --dark-red: #CC3333;
+  --green: #75C051;
+  --dark-green: #22B24B;
+  --gray-gradient: linear-gradient(90deg, #FFFFFF, #E6E6E6);
+  --blue-gradient: linear-gradient(90deg, #FFFFFF, #DDEBF4);
+  --red-gradient: linear-gradient(90deg, #E85155, #C21D2C);
+  --blue-gradient: linear-gradient(90deg, #4793EB, #2367EC);
+  --yellow-gradient: linear-gradient(90deg, #FED200, #F59815);
+  --green-gradient: linear-gradient(90deg, #34CA82, #389372);
+  --yellow-gradient: linear-gradient(90deg, #EBC51B, #E9A523);
+  --yellow-gradient: linear-gradient(90deg, #E9A523, #E9A523);
+  --red-gradient: linear-gradient(90deg, #FF6666, #CC3333);
+  --green-gradient: linear-gradient(90deg, #75C051, #22B24B);
+  --blue-gradient: linear-gradient(90deg, #339999, #336699);
+  --orange-gradient: linear-gradient(90deg, #FF9966, #CC6633);
+  --light-blue-gradient: linear-gradient(90deg, #FFFFFF, #CCFFFF);
+}
+
+.custom-primary {
+  background-color: #ff6600;
+  color: white;
+}
+
+.custom-secondary {
+  background: var(--orange-gradient);
+  color: white;
+}
+
+.custom-button {
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}

@@ -1,0 +1,221 @@
+﻿https://codeium.com/profile?redirect_uri=vscode://Codeium.codeium&state=8d5751be-21da-4d29-8e26-1cff380c9301&redirect_parameters_type=fragment
+
+**********************************************************************************************
+
+alaaalrma@gmail.com
+
+
+talents.gates.co@gmail.com
+123456789
+
+
+
+# Change directory to your project folder
+cd /path/to/your/project
+
+# Initialize a new Git repository
+git init
+
+# Add all files to the repository
+git add .
+
+# Commit the changes
+git commit -m "Initial commit"
+
+# Add the GitLab remote repository URL
+git remote add origin https://gitlab.com/daralholol/talentsgates/talantsgates-web.git
+
+git branch -M develop
+git push -uf origin develop
+
+
+git config --global user.name "Mr-alaa"
+
+
+
+*************************************************************************************************************
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
+npm install -D @tailwindcss/typography @tailwindcss/forms @tailwindcss/line-clamp @tailwindcss/aspect-ratio
+
+src/styles.css
+
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{html,ts}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/line-clamp'),
+  ],
+}
+
+
+<div class="flex justify-center">
+  <p class="text-2xl">How to Install TailwindCSS In Angular? - ItSolutionStuff.com</p>
+</div>
+
+<div class="bg-green-300 border-green-600 border-b p-4 m-4 rounded">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+</div>
+
+*********************************************************************************************************************************
+
+I have created folder inside src called CSS and I add custom-styles.css file and I had
+
+npx tailwindcss build src/assets/css/custom-styles.css -o src/styles.css
+
+OR
+
+watch-tailwind.js
+
+const fs = require('fs');
+const { exec } = require('child_process');
+
+const cssFilePath = 'src/assets/css/custom-styles.css';
+
+// Function to build Tailwind CSS
+function buildTailwind() {
+  exec(`npx tailwindcss build ${cssFilePath} -o src/styles.css`, (error, stdout, stderr) => {
+    if (error) {
+      console.error(`Error: ${error.message}`);
+    } else {
+      console.log('Tailwind CSS build successful.');
+    }
+  });
+}
+
+// Initial build
+buildTailwind();
+
+// Watch for changes
+fs.watchFile(cssFilePath, (curr, prev) => {
+  if (curr.mtime > prev.mtime) {
+    console.log(`Changes detected in ${cssFilePath}. Rebuilding Tailwind CSS...`);
+    buildTailwind();
+  }
+});
+
+console.log(`Watching '${cssFilePath}' for changes...`);
+
+
+node watch-tailwind.js
+
+*********************************************************************************************************************************
+
+npx -p @storybook/cli sb init --type angular
+npm run storybook
+
+ng g c landingpage --standalone --skip-tests=true
+
+******************************************* separation of concerns **************************************************************************************
+
+inside app.component,html
+<router-outlet></router-outlet>
+
+
+ng g c landingpage --skip-tests=true
+ng g c landingpage/components/ad-bar --skip-tests=true
+ng g c landingpage/components/header --skip-tests=true
+
+***********************************************************************************************************
+ng generate module landingpage
+
+const LandingpageRoutes: Routes = [
+    {
+      path: 'LandingpageComponent',
+      component : LandingpageComponent
+    }
+]
+
+@NgModule({
+  imports: [
+      CommonModule,
+      RouterModule.forChild(LandingpageRoutes)
+  ]
+})
+export class LandingpageModule { }
+
+***********************************************************************************************************
+
+
+ landing-page/
+  header/
+    header.component.ts
+  banner/
+    banner.component.ts
+  features/
+   features.component.ts
+
+
+1-Advertisement Bar
+Generate component: ng g component ad-bar
+Input for ad text
+Output event on click
+Storybook story
+Unit tests
+
+2-Header
+Generate component: ng g component header
+Input for logo source and alt text
+Input for basket icon source
+Input for nav items array
+Output event on basket click
+Use *ngFor to loop through nav items
+Storybook docs, controls, variants
+Tests
+
+3-Menu Section
+Generate component: ng g component menu
+Input for menu items array
+Output events for item clicks
+Use *ngFor to loop through menu items
+Storybook story
+Unit tests
+
+4-Main Section
+Generate component: ng g component main
+Input for main content
+Storybook story
+Tests
+
+5-Slider Component
+Generate component: ng g component slider
+Input for slides array
+Output events on slide change
+Integrate Flickity or similar
+Storybook docs, controls, variants
+Tests
+
+6-Services Section
+Generate component: ng g component services
+Input for services array
+Display as cards with *ngFor
+Storybook story
+Tests
+
+7-About Us Section
+Generate component: ng g component about
+Input for about content
+Storybook story
+Tests
+

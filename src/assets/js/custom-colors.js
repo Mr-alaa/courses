@@ -1,0 +1,32 @@
+// customcolors.js
+module.exports = {
+  colors: {
+    orange: '#FF9966',
+    red: '#CC6633',
+    lightblue: '#339999',
+    verylightblue: '#CCFFFF',
+    blue: '#336699',
+    gray: '#E6E6E6',
+    yellow: '#EBC51B',
+    darkyellow: '#E9A523',
+    lightred: '#FF6666',
+    darkred: '#CC3333',
+    green: '#75C051',
+    darkgreen: '#22B24B',
+  },
+  gradients: {
+    gray: 'linear-gradient(90deg, #FFFFFF, #E6E6E6)',
+    blue: 'linear-gradient(90deg, #FFFFFF, #DDEBF4)',
+    red: 'linear-gradient(90deg, #E85155, #C21D2C)',
+    blue1: 'linear-gradient(90deg, #4793EB, #2367EC)',
+    yellow: 'linear-gradient(90deg, #FED200, #F59815)',
+    green: 'linear-gradient(90deg, #34CA82, #389372)',
+    yellow1: 'linear-gradient(90deg, #EBC51B, #E9A523)',
+    yellow2: 'linear-gradient(90deg, #E9A523, #E9A523)',
+    red1: 'linear-gradient(90deg, #FF6666, #CC3333)',
+    green1: 'linear-gradient(90deg, #75C051, #22B24B)',
+    blue2: 'linear-gradient(90deg, #339999, #336699)',
+    orange: 'linear-gradient(90deg, #FF9966, #CC6633)',
+    lightblue: 'linear-gradient(90deg, #FFFFFF, #CCFFFF)',
+  },
+};

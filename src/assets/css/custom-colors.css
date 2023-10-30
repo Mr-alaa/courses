@@ -1,0 +1,28 @@
+:root {
+  --orange: #FF9966;
+  --red: #CC6633;
+  --light-blue: #339999;
+  --very-light-blue: #CCFFFF;
+  --blue: #336699;
+  --gray: #E6E6E6;
+  --yellow: #EBC51B;
+  --dark-yellow: #E9A523;
+  --light-red: #FF6666;
+  --dark-red: #CC3333;
+  --green: #75C051;
+  --dark-green: #22B24B;
+
+  --gray-gradient: linear-gradient(90deg, #FFFFFF, #E6E6E6);
+  --blue-gradient: linear-gradient(90deg, #FFFFFF, #DDEBF4);
+  --red-gradient: linear-gradient(90deg, #E85155, #C21D2C);
+  --blue-gradient-1: linear-gradient(90deg, #4793EB, #2367EC);
+  --yellow-gradient: linear-gradient(90deg, #FED200, #F59815);
+  --green-gradient: linear-gradient(90deg, #34CA82, #389372);
+  --yellow-gradient-1: linear-gradient(90deg, #EBC51B, #E9A523);
+  --yellow-gradient-2: linear-gradient(90deg, #E9A523, #E9A523);
+  --red-gradient-1: linear-gradient(90deg, #FF6666, #CC3333);
+  --green-gradient-1: linear-gradient(90deg, #75C051, #22B24B);
+  --blue-gradient-2: linear-gradient(90deg, #339999, #336699);
+  --orange-gradient: linear-gradient(90deg, #FF9966, #CC6633);
+  --light-blue-gradient: linear-gradient(90deg, #FFFFFF, #CCFFFF);
+}
