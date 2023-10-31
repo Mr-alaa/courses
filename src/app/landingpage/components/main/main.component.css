@@ -1,0 +1,15 @@
+.searchinput{
+  background: transparent linear-gradient(180deg, #FFFFFF 0%, #E6E6E6 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 42px;
+}
+.btnsearch{
+background: transparent linear-gradient(180deg, #FF9966 0%, #CC6633 100%) 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+}
+.searchinput::placeholder {
+  letter-spacing: 0px;
+  color: #33999980;
+  opacity: 0.94;
+  font-size: 20px;
+}

@@ -132,10 +132,14 @@ ng g c landingpage --standalone --skip-tests=true
 inside app.component,html
 <router-outlet></router-outlet>
 
-
 ng g c landingpage --skip-tests=true
 ng g c landingpage/components/ad-bar --skip-tests=true
 ng g c landingpage/components/header --skip-tests=true
+ng g c landingpage/components/menu --skip-tests=true
+ng g c landingpage/components/main --skip-tests=true
+ng g c landingpage/components/slider --skip-tests=true
+ng g c landingpage/components/services --skip-tests=true
+ng g c landingpage/components/about --skip-tests=true
 
 ***********************************************************************************************************
 ng generate module landingpage

@@ -8,8 +8,6 @@ import { HeaderComponent } from './landingpage/components/header/header.componen
 @NgModule({
   declarations: [
     AppComponent,
-    AdBarComponent,
-    HeaderComponent
   ],
   imports: [
     BrowserModule,

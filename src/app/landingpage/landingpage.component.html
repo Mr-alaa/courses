@@ -1,6 +1,21 @@
-<!-- landingpage.component.html -->
-<div class="flex justify-center bg-orange-500">
-  <p class="text-2xl p-4 text-white">How to Install TailwindCSS In Angular? - ItSolutionStuff.com</p>
-</div>
+<section class="app-ad-bar p-2"  [class.fadeOut]="isHidden" *ngIf="hasDiscount">
+  <app-ad-bar (hideAd)="onHideAd($event)"></app-ad-bar>
+</section>
 
-<!-- Your additional content here -->
+<section class="app-header">
+  <app-header></app-header>
+  <app-menu></app-menu>
+  <app-main></app-main>
+</section>
+
+<section class="app-slider">
+  <app-slider></app-slider>
+</section>
+
+<section class="app-services">
+  <app-services></app-services>
+</section>
+
+<section class="app-about">
+  <app-about></app-about>
+</section>

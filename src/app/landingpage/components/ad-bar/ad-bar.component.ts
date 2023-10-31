@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-ad-bar',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./ad-bar.component.css']
 })
 export class AdBarComponent {
+
+  @Output() hideAd = new EventEmitter<boolean>();
+
+  hideSection(){
+    // emit event on click
+    this.hideAd.emit(true);
+  }
 
 }
